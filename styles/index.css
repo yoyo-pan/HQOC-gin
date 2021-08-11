@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "Microsoft YaHei";
+  src: url("../Microsoft-YaHei.ttf") format("woff"),
+    /* Modern Browsers */ url("../Microsoft-YaHei.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+
 body {
   font-family: "Microsoft YaHei";
 }
