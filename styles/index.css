@@ -7,6 +7,18 @@ body {
   display: block;
 }
 
+section {
+  position: relative;
+}
+
 .container {
   width: 1200px;
+}
+
+.arrow {
+  width: 39px;
+  height: 39px;
+  position: absolute;
+  top: -19px;
+  left: calc(50% - 19px);
 }
