@@ -1,0 +1,12 @@
+body {
+  font-family: "Microsoft YaHei";
+}
+
+.banner {
+  width: 100%;
+  display: block;
+}
+
+.container {
+  width: 1200px;
+}
