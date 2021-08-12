@@ -6,19 +6,23 @@
 
 body {
   font-family: "Microsoft YaHei";
+  margin: 0;
 }
 
 .banner {
-  width: 100%;
+  width: 1920px;
   display: block;
 }
 
 section {
+  width: 1920px;
   position: relative;
+  box-sizing: border-box;
 }
 
 .container {
   width: 1200px;
+  padding-left: 360px;
 }
 
 .arrow {

@@ -6,17 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta name="description" content="HQOC 金鼎财富" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
+
     <link href="styles/index.css" rel="stylesheet" />
     <link href="styles/section1.css" rel="stylesheet" />
     <link href="styles/section2.css" rel="stylesheet" />
     <link href="styles/section3.css" rel="stylesheet" />
     <link href="styles/section4.css" rel="stylesheet" />
+    <link href="styles/footer.css" rel="stylesheet" />
 
     <title>HQOC 金鼎财富</title>
   </head>
@@ -131,6 +127,58 @@
           <img style="width: 99%" src="assets/join_us.png" alt="joinus" />
         </div>
       </section>
+
+      <footer>
+        <div class="container">
+          <div class="footer-slogan">加入我们 <span class="join-us">JOIN US</span></div>
+          <div class="footer-contact-container">
+            <div class="footer-contact">
+              <img src="assets/icon_tg@2x.png" alt="tg" />
+              <span>Telegram：@JDCF_NaNa</span>
+            </div>
+            <div class="footer-contact">
+              <img src="assets/icon_potato@2x.png" alt="tg" />
+              <span> 土豆：JDCF_NANA</span>
+            </div>
+          </div>
+          <div class="footer-contact-container">
+            <div class="footer-contact">
+              <img src="assets/icon_bat@2x.png" alt="tg" />
+              <span>蝙蝠：BAT ID：12540333</span>
+            </div>
+            <div class="footer-contact">
+              <img src="assets/icon_mail@2x.png" alt="tg" />
+              <span> 邮箱：jdcfnana@gmail.com</span>
+            </div>
+          </div>
+          <div class="footer-imgs">
+            <img src="assets/footer-img-1.png" alt="footer-img-1" />
+            <img src="assets/footer-img-2.png" alt="footer-img-2" />
+          </div>
+          <div class="copyright">Copyright © 2020-2021 金鼎财富 版权所有</div>
+        </div>
+      </footer>
     </main>
   </body>
+
+  <script>
+    function scaleBody() {
+      var currentWidth = window.document.documentElement.clientWidth
+      if (currentWidth < 1920) {
+        var scale = currentWidth / 1920
+        document.querySelector("main").style.transform = "scale(" + scale + ")"
+        document.querySelector("main").style.transformOrigin = "top left"
+        var scaledHeight = document.querySelector("main").getBoundingClientRect().height
+        document.body.style.height = scaledHeight + "px"
+      }
+    }
+
+    window.onload = function () {
+      scaleBody()
+    }
+
+    window.addEventListener("resize", function () {
+      scaleBody()
+    })
+  </script>
 </html>
