@@ -18,11 +18,12 @@ section {
   width: 1920px;
   position: relative;
   box-sizing: border-box;
+  display: flex;
+  justify-content: center;
 }
 
 .container {
   width: 1200px;
-  padding-left: 360px;
 }
 
 .arrow {
