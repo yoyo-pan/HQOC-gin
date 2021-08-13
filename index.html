@@ -222,7 +222,9 @@
     }
 
     function calculateNavigatorPosition() {
-      if (window.scrollY > 4600) return
+      // 555: navigator height, 200: offset
+      var maxScrollHeight = window.document.documentElement.scrollHeight - 555 - 200
+      if (window.scrollY > maxScrollHeight) return
       var navigator = document.getElementsByClassName("navigator")[0]
       navigator.style.top = `calc(40vh + ${window.scrollY}px)`
     }
